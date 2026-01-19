@@ -1,14 +1,24 @@
 # InfraMind GPU Agent
 
-InfraMind GPU Agent is a lightweight, Linux-based observability agent designed to monitor and analyze GPU infrastructure in real time.
-
-Modern DevOps and monitoring tools focus heavily on CPU and memory, leaving GPUs as blind spots — despite their high cost and critical role in AI workloads. InfraMind aims to close this gap by providing deep visibility into GPU utilization, memory usage, thermal health, and running workloads.
+InfraMind GPU Agent is a Linux-first infrastructure observability tool designed to monitor system and NVIDIA GPU health.
 
 ## Why InfraMind?
+GPUs are expensive, scarce, and often underutilized. Traditional monitoring tools focus on CPU and memory while ignoring GPUs.
 
-- GPUs are expensive and often underutilized
-- GPU failures are detected too late
-- Existing tools lack GPU-first insights
-- AI workloads need proactive infrastructure intelligence
+InfraMind brings visibility to GPU infrastructure.
 
-InfraMind starts with visibility and evolves toward predictive and self-healing GPU infrastructure.
+## Features
+- Linux system health monitoring
+- NVIDIA GPU detection
+- GPU utilization, memory, and temperature metrics
+- Docker-ready deployment
+
+## Supported Platforms
+- Ubuntu 20.04+
+- Linux with NVIDIA GPUs
+- macOS (development only)
+
+## Run Locally
+```bash
+python3 agent/gpu_collector.py
+
